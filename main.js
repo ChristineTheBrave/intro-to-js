@@ -22,6 +22,14 @@
  //     your `birthYear` and the `currentYear`
  //     (NOTE: DO NOT simply assign a number to the `age` variable, use an expression!)
 
+ let firstName = 'Christine';
+ let lastName = 'Ash';
+ const birthYear = ( 1993 );
+ let currentYear = ( 2017 );
+ let middleName;
+ let age = currentYear - birthYear;
+ console.log( age );
+
 
 
  // TODO 2:
@@ -33,7 +41,12 @@
  //     NOTE: This variable SHOULD NOT have any decimal places!
  //     NOTE: You MUST USE an expression for this, it may have more than one operation!
 
-
+ let greeting = 'Hello there ';
+ console.log( greeting );
+ greeting = greeting + 'Christine!';
+ console.log( greeting );
+ let decades = ( (1993 - 1900) / 10 );
+ console.log( decades );
 
  // TODO 3:
  // (a) Declare a new variable called `style`, but do not instantiate it immediately.
