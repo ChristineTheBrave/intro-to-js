@@ -45,7 +45,7 @@
  console.log( greeting );
  greeting = greeting + 'Christine!';
  console.log( greeting );
- let decades = ( (1993 - 1900) / 10 );
+ let decades = ( (1993 - 1900) % 12 );
  console.log( decades );
 
  // TODO 3:
@@ -59,6 +59,30 @@
  //     Next, declare a variable called `review`, then either assign "good" or "bad"
  //         depending on the value of `instructorIsAwesome`
  //     NOTE: You MUST use code to determine which value to assign to `review`!
+
+ let style;
+ let classic;
+ if ( age < 35) {
+   style = ( 'hip' );
+   console.log( age );
+ } else  {
+   style = ( 'classic');
+   console.log( age );
+ }
+ let instructorIsAwesome = true;
+ if ( instructorIsAwesome ) {
+   console.log( 'Jordan' );
+ }
+ let review;
+ if ( instructorIsAwesome < 10 ) {
+   review = ('good')
+   console.log( review );
+ } else {
+   review = ( 'bad' )
+   console.log( review );
+ }
+
+
 
 
 
