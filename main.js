@@ -123,17 +123,17 @@
  //     the word "bananas" instead.
 
   function mablib( libOne, libTwo, libThree, libFour ) {
-    if ( libOne !== true ) {
-      return bananas;
-    } else if ( libTwo !== true ) {
-      return bananas;
-    } else if ( libThree !== true ) {
-      return bananas;
-    } else if ( libFour !== true ) {
-      return bananas;
-    } else {
-      return bananas;
+    if ( libOne === false ) {
+      libOne = bananas;
+    } else if ( libTwo === false ) {
+      libTwo = bananas;
+    } else if ( libThree === false ) {
+      libThree = bananas;
+    } else if ( libFour === false ) {
+      libFour = bananas;
     }
+    return 'I prefer' + libOne + 'while I' + libTwo + 'so that I dont' + libThree + 'on the' + libFour + '.';
+
 
   }
 
