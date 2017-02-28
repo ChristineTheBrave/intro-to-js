@@ -123,17 +123,17 @@
  //     the word "bananas" instead.
 
   function mablib( libOne, libTwo, libThree, libFour ) {
-    if ( libOne === false ) {
+    if ( !libOne ) {
       libOne = bananas;
-    } else if ( libTwo === false ) {
+    } else if ( !libTwo ) {
       libTwo = bananas;
-    } else if ( libThree === false ) {
+    } else if ( !libThree ) {
       libThree = bananas;
-    } else if ( libFour === false ) {
-      libFour = bananas;
+    } else if ( !libFour ) {
+    libFour = bananas;
     }
-    return 'I prefer' + libOne + 'while I' + libTwo + 'so that I dont' + libThree + 'on the' + libFour + '.';
-
+    let sentence = 'I prefer' + libOne + 'while I' + libTwo + 'so that I dont' + libThree + 'on the' + libFour + '.';
+    return bananas;
 
   }
 
