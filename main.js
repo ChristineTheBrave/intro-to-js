@@ -122,18 +122,21 @@
  // (b) If any of the words is not provided to the function then it should use
  //     the word "bananas" instead.
 
-  function mablib( libOne, libTwo, libThree, libFour ) {
+  function madlib( libOne, libTwo, libThree, libFour ) {
     if ( !libOne ) {
-      libOne = bananas;
-    } else if ( !libTwo ) {
-      libTwo = bananas;
-    } else if ( !libThree ) {
-      libThree = bananas;
-    } else if ( !libFour ) {
-    libFour = bananas;
+      libOne = 'bananas';
     }
-    let sentence = 'I prefer' + libOne + 'while I' + libTwo + 'so that I dont' + libThree + 'on the' + libFour + '.';
-    return bananas;
+    if ( !libTwo ) {
+      libTwo = 'bananas';
+    }
+    if ( !libThree ) {
+      libThree = 'bananas';
+    }
+    if ( !libFour ) {
+    libFour = 'bananas';
+    }
+    let sentence = 'I prefer ' + libOne + ' while I ' + libTwo + ' so that I don\'t ' + libThree + ' on the ' + libFour + '.';
+    return sentence;
 
   }
 
