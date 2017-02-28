@@ -75,14 +75,12 @@
  }
  let review;
  if ( instructorIsAwesome < 10 ) {
-   review = ('good')
+   review = ('good');
    console.log( review );
  } else {
-   review = ( 'bad' )
+   review = ( 'bad' );
    console.log( review );
  }
-
-
 
 
 
@@ -99,6 +97,20 @@
  //     then it should return the value for something that is Not a Number
 
 
+  function math( numberOne, numberTwo, mathematicalOperation ) {
+    if ( mathematicalOperation === 'add' ) {
+      return numberOne + numberTwo;
+    } else if ( mathematicalOperation === 'subtract' ) {
+      return numberOne - numberTwo;
+    } else if ( mathematicalOperation === 'divide' ) {
+      return numberOne / numberTwo;
+    } else if ( mathematicalOperation === 'multiply' ) {
+      return numberOne * numberTwo;
+    } else {
+      return NaN;
+    }
+
+  }
 
 
  // TODO 5:
@@ -110,7 +122,20 @@
  // (b) If any of the words is not provided to the function then it should use
  //     the word "bananas" instead.
 
+  function mablib( libOne, libTwo, libThree, libFour ) {
+    if ( libOne !== true ) {
+      return bananas;
+    } else if ( libTwo !== true ) {
+      return bananas;
+    } else if ( libThree !== true ) {
+      return bananas;
+    } else if ( libFour !== true ) {
+      return bananas;
+    } else {
+      return bananas;
+    }
 
+  }
 
 
  /* ******************************************************************
